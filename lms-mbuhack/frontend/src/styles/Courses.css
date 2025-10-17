@@ -1,0 +1,62 @@
+.courses-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.courses-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.course-card {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border: 1px solid #e9ecef;
+}
+
+.course-card h3 {
+  margin: 0 0 1rem 0;
+  color: #2c3e50;
+}
+
+.course-description {
+  color: #6c757d;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.course-duration, .course-teacher {
+  color: #495057;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.enrolled-students {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e9ecef;
+}
+
+.enrolled-students h4 {
+  margin-bottom: 0.5rem;
+  color: #495057;
+}
+
+.student-item {
+  padding: 0.5rem;
+  background: #f8f9fa;
+  margin-bottom: 0.25rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
