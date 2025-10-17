@@ -1,7 +1,8 @@
 const express = require('express');
+const mongoose =require('express');
 const cors = require('cors');
 require('dotenv').config();
-const connectDB = require('./config/database');
+
 
 // Connect to database
 connectDB();
@@ -9,7 +10,13 @@ connectDB();
 const app = express();
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: [ 
+    'http://localhost:3000',
+    'https://your-frontend-domain.netlify.app'
+  ],
+  Credentials:true
+}));
 app.use(express.json());
 
 // Routes
@@ -61,4 +68,5 @@ const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
+
 });
