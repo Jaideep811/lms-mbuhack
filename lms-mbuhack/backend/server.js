@@ -12,7 +12,7 @@ const app = express();
 app.use(cors({
   origin: [ 
     'http://localhost:3000',
-    'https://lmsmbufrontend.netlify.app/'
+    'https://lmsmbufrontend.netlify.app'
   ],
   Credentials:true
 }));
@@ -69,6 +69,7 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 
 });
+
 
 
 
